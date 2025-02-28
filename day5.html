@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5: Full Body & Strength</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <h1>Day 5: Full Body & Strength</h1>
+    <div class="cards">
+      <div class="exercise-card" onclick="showDetails('deadlifts')">
+        <img src="images/deadlifts.jpg" alt="Deadlifts">
+        <h2>Deadlifts</h2>
+        <p>4 sets x 5-8 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('front-squats')">
+        <img src="images/front-squats.jpg" alt="Front Squats">
+        <h2>Front Squats</h2>
+        <p>3 sets x 8 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('dumbbell-snatches')">
+        <img src="images/dumbbell-snatches.jpg" alt="Dumbbell Snatches">
+        <h2>Dumbbell Snatches</h2>
+        <p>3 sets x 12 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('farmers-walk')">
+        <img src="images/farmers-walk.jpg" alt="Farmer’s Walk">
+        <h2>Farmer’s Walk</h2>
+        <p>3 sets x 30 seconds</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('treadmill-sprints')">
+        <img src="images/treadmill-sprints.jpg" alt="Treadmill Sprints">
+        <h2>Treadmill Sprints</h2>
+        <p>10-15 minutes</p>
+      </div>
+    </div>
+    <div id="details" class="details"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

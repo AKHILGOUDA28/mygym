@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2: Back & Biceps</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <h1>Day 2: Back & Biceps</h1>
+    <div class="cards">
+      <div class="exercise-card" onclick="showDetails('pull-ups')">
+        <img src="https://weighttraining.guide/wp-content/uploads/2016/10/pull-up-2-resized.png" alt="Pull-Ups">
+        <h2>Pull-Ups</h2>
+        <p>4 sets x 8-12 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('barbell-rows')">
+        <img src="https://training.fit/wp-content/uploads/2020/02/rudern-langhantel.png" alt="Barbell Rows">
+        <h2>Barbell Rows</h2>
+        <p>4 sets x 8-10 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('lat-pulldown')">
+        <img src="https://bellsofsteel.com/cdn/shop/articles/Does-Lat-Pulldown-Work-Forearms.webp?v=1708539827&width=1024" alt="Lat Pulldown">
+        <h2>Lat Pulldown</h2>
+        <p>3 sets x 10-12 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('seated-cable-rows')">
+        <img src="https://static.strengthlevel.com/images/exercises/seated-cable-row/seated-cable-row-800.jpg" alt="Seated Cable Rows">
+        <h2>Seated Cable Rows</h2>
+        <p>3 sets x 12 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('barbell-curls')">
+        <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2016/10/EZ-Barbell-Curl-resized.png?ezimgfmt=ng%3Awebp%2Fngcb4" alt="Barbell Bicep Curls">
+        <h2>Barbell Bicep Curls</h2>
+        <p>3 sets x 8-10 reps</p>
+      </div>
+      <div class="exercise-card" onclick="showDetails('hammer-curls')">
+        <img src="https://cdn.prod.website-files.com/61713dc07218ee71af5413af/66fa8e841702f03d7c76bef7_66fa8e3f30d1ccab95ff2b9f_Muscles%2520Hammer%2520Curls%2520Target-min.jpeg" alt="Hammer Curls">
+        <h2>Hammer Curls</h2>
+        <p>3 sets x 10-12 reps</p>
+      </div>
+    </div>
+    <div id="details" class="details"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
