@@ -7,38 +7,50 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="background"></div>
+  <div class="background day5"></div>
   <div class="container">
-    <h1>Day 5: Full Body & Strength</h1>
+    <h1>🏋️‍♂️ Day 5: Full Body & Strength 💪</h1>
+    <p class="subtitle">Complete all exercises to finish today's workout!</p>
     <div class="cards">
-      <div class="exercise-card" onclick="showDetails('deadlifts')">
-        <img src="images/deadlifts.jpg" alt="Deadlifts">
+      <div class="exercise-card" onclick="showDetails(this)">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/deadlift-1651142430.jpg?crop=1.00xw:0.845xh;0,0.0510xh&resize=980:*" alt="Deadlifts">
         <h2>Deadlifts</h2>
         <p>4 sets x 5-8 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('front-squats')">
-        <img src="images/front-squats.jpg" alt="Front Squats">
+      <div class="exercise-card" onclick="showDetails(this)">
+        <img src="https://i.ytimg.com/vi/uYumuL_G_V0/maxresdefault.jpg" alt="Front Squats">
         <h2>Front Squats</h2>
         <p>3 sets x 8 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('dumbbell-snatches')">
-        <img src="images/dumbbell-snatches.jpg" alt="Dumbbell Snatches">
+      <div class="exercise-card" onclick="showDetails(this)">
+        <img src="https://i.ytimg.com/vi/3mlhF3dptAo/maxresdefault.jpg" alt="Dumbbell Snatches">
         <h2>Dumbbell Snatches</h2>
         <p>3 sets x 12 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('farmers-walk')">
-        <img src="images/farmers-walk.jpg" alt="Farmer’s Walk">
+      <div class="exercise-card" onclick="showDetails(this)">
+        <img src="https://www.dmoose.com/cdn/shop/articles/1_9631b298-37ec-4b0e-975f-dd6ba6a7c4c9.jpg?v=1653565657" alt="Farmer’s Walk">
         <h2>Farmer’s Walk</h2>
         <p>3 sets x 30 seconds</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('treadmill-sprints')">
-        <img src="images/treadmill-sprints.jpg" alt="Treadmill Sprints">
+      <div class="exercise-card" onclick="showDetails(this)">
+        <img src="https://i.ytimg.com/vi/x0IbPmWgi3U/sddefault.jpg" alt="Treadmill Sprints">
         <h2>Treadmill Sprints</h2>
         <p>10-15 minutes</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
     </div>
-    <div id="details" class="details"></div>
   </div>
+
+  <!-- Success Message -->
+  <div id="success-message">
+    <h1>🎉 You Successfully Completed Today's Workout! 💪</h1>
+    <button onclick="resetWorkout()">Restart</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -7,43 +7,56 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="background"></div>
+  <div class="background day4"></div>
   <div class="container">
-    <h1>Day 4: Shoulders & Abs</h1>
+    <h1>🏋️‍♂️ Day 4: Shoulders & Abs 💪</h1>
+    <p class="subtitle">Complete all exercises to finish today's workout!</p>
     <div class="cards">
-      <div class="exercise-card" onclick="showDetails('overhead-press')">
+      <div class="exercise-card" onclick="showDetails(this)">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSad8HkkoEgZudMbWjI-OXaCae7FOW3poE9xw&s" alt="Overhead Shoulder Press">
         <h2>Overhead Shoulder Press</h2>
         <p>4 sets x 8-12 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('lateral-raises')">
+      <div class="exercise-card" onclick="showDetails(this)">
         <img src="https://gymgeek.com/wp-content/uploads/2024/02/dumbbell-lateral-raises-square.png" alt="Lateral Raises">
         <h2>Lateral Raises</h2>
         <p>3 sets x 12-15 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('face-pulls')">
+      <div class="exercise-card" onclick="showDetails(this)">
         <img src="https://trainingstation.co.uk/cdn/shop/articles/face-pulls-muscles-used_fe27890e-ac33-489a-bb21-a9bbcc84bfae_600x.png?v=1738219155" alt="Face Pulls">
         <h2>Face Pulls</h2>
         <p>3 sets x 12 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('shrugs')">
+      <div class="exercise-card" onclick="showDetails(this)">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjwksqm9fu_lnU5glFkqSqlIsAVtpN_wFNw&s" alt="Shrugs">
         <h2>Shrugs</h2>
         <p>3 sets x 12 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('leg-raises')">
+      <div class="exercise-card" onclick="showDetails(this)">
         <img src="https://kinxlearning.com/cdn/shop/files/exercise-21_923x.jpg?v=1613154789" alt="Hanging Leg Raises">
         <h2>Hanging Leg Raises</h2>
         <p>3 sets x 15 reps</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
-      <div class="exercise-card" onclick="showDetails('planks')">
+      <div class="exercise-card" onclick="showDetails(this)">
         <img src="https://hips.hearstapps.com/hmg-prod/images/hdm119918mh15842-1545237096.png?crop=0.668xw:1.00xh;0.117xw,0&resize=1200:*" alt="Planks">
         <h2>Planks</h2>
         <p>3 sets x 60 seconds</p>
+        <button onclick="completeExercise(event)">Completed</button>
       </div>
     </div>
-    <div id="details" class="details"></div>
   </div>
+
+  <!-- Success Message -->
+  <div id="success-message">
+    <h1>🎉 You Successfully Completed Today's Workout! 💪</h1>
+    <button onclick="resetWorkout()">Restart</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

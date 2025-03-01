@@ -1,97 +1,72 @@
+const exerciseDetails = {
+  "bench-press": ["Flat Bench Press", "4 sets x 6-10 reps (progressive overload)"],
+  "incline-press": ["Incline Dumbbell Press", "3 sets x 8-12 reps"],
+  "weighted-dips": ["Weighted Dips", "3 sets x 8-12 reps"],
+  "cable-fly": ["Cable Chest Fly", "3 sets x 12-15 reps"],
+  "close-grip-bench": ["Close-Grip Bench Press", "3 sets x 8-12 reps"],
+  "triceps-extension": ["Overhead Triceps Extension", "3 sets x 10-12 reps"],
+  "pull-ups": ["Pull-Ups", "4 sets x 8-12 reps"],
+  "barbell-rows": ["Barbell Rows", "4 sets x 8-10 reps"],
+  "lat-pulldown": ["Lat Pulldown", "3 sets x 10-12 reps"],
+  "seated-cable-rows": ["Seated Cable Rows", "3 sets x 12 reps"],
+  "barbell-curls": ["Barbell Bicep Curls", "3 sets x 8-10 reps"],
+  "hammer-curls": ["Hammer Curls", "3 sets x 10-12 reps"],
+  "barbell-squats": ["Barbell Squats", "4 sets x 6-10 reps"],
+  "romanian-deadlifts": ["Romanian Deadlifts", "3 sets x 8-10 reps"],
+  "leg-press": ["Leg Press", "3 sets x 10-12 reps"],
+  "leg-curls": ["Leg Curls", "3 sets x 12 reps"],
+  "leg-extensions": ["Leg Extensions", "3 sets x 12 reps"],
+  "calf-raises": ["Standing Calf Raises", "3 sets x 15 reps"],
+  "overhead-press": ["Overhead Shoulder Press", "4 sets x 8-12 reps"],
+  "lateral-raises": ["Lateral Raises", "3 sets x 12-15 reps"],
+  "face-pulls": ["Face Pulls", "3 sets x 12 reps"],
+  "shrugs": ["Shrugs", "3 sets x 12 reps"],
+  "leg-raises": ["Hanging Leg Raises", "3 sets x 15 reps"],
+  "planks": ["Planks", "3 sets x 60 seconds"],
+  "deadlifts": ["Deadlifts", "4 sets x 5-8 reps"],
+  "front-squats": ["Front Squats", "3 sets x 8 reps"],
+  "dumbbell-snatches": ["Dumbbell Snatches", "3 sets x 12 reps"],
+  "farmers-walk": ["Farmer’s Walk", "3 sets x 30 seconds"],
+  "treadmill-sprints": ["Treadmill Sprints", "10-15 minutes"]
+};
+
 function showDetails(exercise) {
-    const details = document.getElementById('details');
-    let content = '';
-  
-    switch (exercise) {
-      case 'bench-press':
-        content = '<h2>Flat Bench Press</h2><p>4 sets x 6-10 reps (progressive overload)</p>';
-        break;
-      case 'incline-press':
-        content = '<h2>Incline Dumbbell Press</h2><p>3 sets x 8-12 reps</p>';
-        break;
-      case 'weighted-dips':
-        content = '<h2>Weighted Dips</h2><p>3 sets x 8-12 reps</p>';
-        break;
-      case 'cable-fly':
-        content = '<h2>Cable Chest Fly</h2><p>3 sets x 12-15 reps</p>';
-        break;
-      case 'close-grip-bench':
-        content = '<h2>Close-Grip Bench Press</h2><p>3 sets x 8-12 reps</p>';
-        break;
-      case 'triceps-extension':
-        content = '<h2>Overhead Triceps Extension</h2><p>3 sets x 10-12 reps</p>';
-        break;
-      case 'pull-ups':
-        content = '<h2>Pull-Ups</h2><p>4 sets x 8-12 reps</p>';
-        break;
-      case 'barbell-rows':
-        content = '<h2>Barbell Rows</h2><p>4 sets x 8-10 reps</p>';
-        break;
-      case 'lat-pulldown':
-        content = '<h2>Lat Pulldown</h2><p>3 sets x 10-12 reps</p>';
-        break;
-      case 'seated-cable-rows':
-        content = '<h2>Seated Cable Rows</h2><p>3 sets x 12 reps</p>';
-        break;
-      case 'barbell-curls':
-        content = '<h2>Barbell Bicep Curls</h2><p>3 sets x 8-10 reps</p>';
-        break;
-      case 'hammer-curls':
-        content = '<h2>Hammer Curls</h2><p>3 sets x 10-12 reps</p>';
-        break;
-      case 'barbell-squats':
-        content = '<h2>Barbell Squats</h2><p>4 sets x 6-10 reps</p>';
-        break;
-      case 'romanian-deadlifts':
-        content = '<h2>Romanian Deadlifts</h2><p>3 sets x 8-10 reps</p>';
-        break;
-      case 'leg-press':
-        content = '<h2>Leg Press</h2><p>3 sets x 10-12 reps</p>';
-        break;
-      case 'leg-curls':
-        content = '<h2>Leg Curls</h2><p>3 sets x 12 reps</p>';
-        break;
-      case 'leg-extensions':
-        content = '<h2>Leg Extensions</h2><p>3 sets x 12 reps</p>';
-        break;
-      case 'calf-raises':
-        content = '<h2>Standing Calf Raises</h2><p>3 sets x 15 reps</p>';
-        break;
-      case 'overhead-press':
-        content = '<h2>Overhead Shoulder Press</h2><p>4 sets x 8-12 reps</p>';
-        break;
-      case 'lateral-raises':
-        content = '<h2>Lateral Raises</h2><p>3 sets x 12-15 reps</p>';
-        break;
-      case 'face-pulls':
-        content = '<h2>Face Pulls</h2><p>3 sets x 12 reps</p>';
-        break;
-      case 'shrugs':
-        content = '<h2>Shrugs</h2><p>3 sets x 12 reps</p>';
-        break;
-      case 'leg-raises':
-        content = '<h2>Hanging Leg Raises</h2><p>3 sets x 15 reps</p>';
-        break;
-      case 'planks':
-        content = '<h2>Planks</h2><p>3 sets x 60 seconds</p>';
-        break;
-      case 'deadlifts':
-        content = '<h2>Deadlifts</h2><p>4 sets x 5-8 reps</p>';
-        break;
-      case 'front-squats':
-        content = '<h2>Front Squats</h2><p>3 sets x 8 reps</p>';
-        break;
-      case 'dumbbell-snatches':
-        content = '<h2>Dumbbell Snatches</h2><p>3 sets x 12 reps</p>';
-        break;
-      case 'farmers-walk':
-        content = '<h2>Farmer’s Walk</h2><p>3 sets x 30 seconds</p>';
-        break;
-      case 'treadmill-sprints':
-        content = '<h2>Treadmill Sprints</h2><p>10-15 minutes</p>';
-        break;
-    }
-  
-    details.innerHTML = content;
-    details.scrollIntoView({ behavior: 'smooth' });
+  const details = document.getElementById('details');
+
+  if (exerciseDetails[exercise]) {
+      const [title, sets] = exerciseDetails[exercise];
+      details.innerHTML = `<h2>${title}</h2><p>${sets}</p>`;
+      details.scrollIntoView({ behavior: 'smooth' });
   }
+}
+
+function completeExercise(event) {
+  event.stopPropagation(); // Prevents triggering showDetails
+  const card = event.target.parentElement;
+  card.classList.add('completed');
+
+  // Add tick mark ✅ and remove button
+  event.target.remove();
+  card.innerHTML += '<span class="tick-mark">✔</span>';
+
+  checkAllCompleted();
+}
+
+function checkAllCompleted() {
+  const totalExercises = document.querySelectorAll('.exercise-card').length;
+  const completedExercises = document.querySelectorAll('.exercise-card.completed').length;
+
+  if (totalExercises === completedExercises) {
+      document.getElementById('success-message').style.display = 'flex';
+  }
+}
+
+function resetWorkout() {
+  document.querySelectorAll('.exercise-card').forEach(card => {
+      card.classList.remove('completed');
+      card.querySelector('.tick-mark')?.remove();
+      card.innerHTML += `<button onclick="completeExercise(event)">Complete</button>`;
+  });
+
+  document.getElementById('success-message').style.display = 'none';
+}
