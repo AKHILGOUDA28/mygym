@@ -124,7 +124,7 @@ button:hover {
 
 /* Full-Screen Success Message */
 #success-message {
-  display: none;  /* FIXED: Now the message will NOT appear in the background */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -137,7 +137,7 @@ button:hover {
   flex-direction: column;
   font-size: 24px;
   text-align: center;
-  z-index: 10; /* Ensures it appears on top only when needed */
+  z-index: 10;
 }
 
 #success-message h1 {
@@ -162,6 +162,21 @@ button:hover {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  h1 {
+      font-size: 2.2rem;
+  }
+
+  .cards {
+      gap: 15px;
+  }
+
+  .card, .exercise-card {
+      width: 180px;
+      padding: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
       font-size: 2rem;
@@ -173,11 +188,23 @@ button:hover {
   }
 
   .card, .exercise-card {
-      width: 90%;
+      width: 80%;
+      padding: 15px;
   }
 }
+
 @media (max-width: 480px) {  
+  h1 {
+      font-size: 1.8rem;
+  }
+
   .card, .exercise-card {  
-      width: 100%; /* Full width on small screens */  
+      width: 100%;  
+      padding: 10px;
   }  
+
+  button {
+      font-size: 12px;
+      padding: 8px 12px;
+  }
 }
